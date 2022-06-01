@@ -1,0 +1,858 @@
+{
+    "channels": [
+        {
+            "name": "CR1",
+            "samples": [
+                {
+                    "name": "bkg5",
+                    "data": [
+                        3.035433769226074
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                0.8612425212687628
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    3.0735554695129395
+                                ],
+                                "hi_data": [
+                                    2.770465850830078
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    2.6018168926239014
+                                ],
+                                "hi_data": [
+                                    3.035810708999634
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg4",
+                    "data": [
+                        0.13916172087192535
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                0.017546150560673737
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.13722795248031616
+                                ],
+                                "hi_data": [
+                                    0.13089269399642944
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.13977517187595367
+                                ],
+                                "hi_data": [
+                                    0.13762502372264862
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg6",
+                    "data": [
+                        0.009999999776482582
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2a",
+                    "data": [
+                        63.39091873168945
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                1.6021838637004961
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    64.26689910888672
+                                ],
+                                "hi_data": [
+                                    59.113929748535156
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    63.674556732177734
+                                ],
+                                "hi_data": [
+                                    62.537017822265625
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2b",
+                    "data": [
+                        36.89537811279297
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                2.242285863373452
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    39.443443298339844
+                                ],
+                                "hi_data": [
+                                    33.79325866699219
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    40.1118049621582
+                                ],
+                                "hi_data": [
+                                    35.82234191894531
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg3",
+                    "data": [
+                        1.5622503757476807
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                3.703838107541308
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    1.8357985019683838
+                                ],
+                                "hi_data": [
+                                    4.6365485191345215
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    2.8352880477905273
+                                ],
+                                "hi_data": [
+                                    0.3144739270210266
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg1",
+                    "data": [
+                        376.3728942871094
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR1",
+                            "type": "staterror",
+                            "data": [
+                                7.107947416149485
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    374.8480224609375
+                                ],
+                                "hi_data": [
+                                    376.1694030761719
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    376.59307861328125
+                                ],
+                                "hi_data": [
+                                    375.59375
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg1",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CR2",
+            "samples": [
+                {
+                    "name": "bkg5",
+                    "data": [
+                        28.48261070251465
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                1.1186809034420948
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    30.495208740234375
+                                ],
+                                "hi_data": [
+                                    26.446622848510742
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    29.17844581604004
+                                ],
+                                "hi_data": [
+                                    28.050228118896484
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg4",
+                    "data": [
+                        0.05654829740524292
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                0.014205639010347814
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.0491521954536438
+                                ],
+                                "hi_data": [
+                                    0.04323234036564827
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.054340656846761703
+                                ],
+                                "hi_data": [
+                                    0.053881656378507614
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg6",
+                    "data": [
+                        0.009999999776482582
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2a",
+                    "data": [
+                        2974.04833984375
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                10.62544782020689
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    2973.172119140625
+                                ],
+                                "hi_data": [
+                                    2978.325439453125
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    2973.7646484375
+                                ],
+                                "hi_data": [
+                                    2974.902099609375
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2b",
+                    "data": [
+                        1035.5352783203125
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                11.619408903663954
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    1070.0948486328125
+                                ],
+                                "hi_data": [
+                                    981.5922241210938
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    1043.834716796875
+                                ],
+                                "hi_data": [
+                                    1026.9266357421875
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg1",
+                    "data": [
+                        48.961238861083984
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_CR2",
+                            "type": "staterror",
+                            "data": [
+                                2.456165648544821
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    50.486114501953125
+                                ],
+                                "hi_data": [
+                                    49.16473388671875
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    48.741050720214844
+                                ],
+                                "hi_data": [
+                                    49.74038314819336
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg1",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SR",
+            "samples": [
+                {
+                    "name": "bkg5",
+                    "data": [
+                        1.3026835918426514
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                0.7294247762623618
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    1.3144246339797974
+                                ],
+                                "hi_data": [
+                                    1.3035098314285278
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    1.30254328250885
+                                ],
+                                "hi_data": [
+                                    0.6422774791717529
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg4",
+                    "data": [
+                        0.008334225043654442
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                0.003802959954870681
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.008334225043654442
+                                ],
+                                "hi_data": [
+                                    0.008334225043654442
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    0.008334225043654442
+                                ],
+                                "hi_data": [
+                                    0.008334225043654442
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg6",
+                    "data": [
+                        0.09000000357627869
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "lumi",
+                            "type": "lumi",
+                            "data": null
+                        },
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2a",
+                    "data": [
+                        3.8030426502227783
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                0.39128789903124844
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    3.770508289337158
+                                ],
+                                "hi_data": [
+                                    3.3753855228424072
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    4.734841823577881
+                                ],
+                                "hi_data": [
+                                    2.8844685554504395
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg2b",
+                    "data": [
+                        2.790347099304199
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                0.6121295417723855
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    2.6416056156158447
+                                ],
+                                "hi_data": [
+                                    2.4947893619537354
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    3.299518585205078
+                                ],
+                                "hi_data": [
+                                    2.4722061157226562
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg2",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                },
+                {
+                    "name": "bkg1",
+                    "data": [
+                        13.753521919250488
+                    ],
+                    "modifiers": [
+                        {
+                            "name": "staterror_SR",
+                            "type": "staterror",
+                            "data": [
+                                1.157708559579211
+                            ]
+                        },
+                        {
+                            "name": "syst_2",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    13.840763092041016
+                                ],
+                                "hi_data": [
+                                    13.354846954345703
+                                ]
+                            }
+                        },
+                        {
+                            "name": "syst_1",
+                            "type": "histosys",
+                            "data": {
+                                "lo_data": [
+                                    14.271018981933594
+                                ],
+                                "hi_data": [
+                                    12.156450271606445
+                                ]
+                            }
+                        },
+                        {
+                            "name": "mu_bkg1",
+                            "type": "normfactor",
+                            "data": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "measurements": [
+        {
+            "name": "BasicMeasurement",
+            "config": {
+                "parameters": [
+                    {
+                        "name": "lumi",
+                        "auxdata": [
+                            1.0
+                        ],
+                        "bounds": [
+                            [
+                                0.8049999999999999,
+                                1.195
+                            ]
+                        ],
+                        "inits": [
+                            1.0
+                        ],
+                        "sigmas": [
+                            0.039
+                        ]
+                    },
+                    {
+                        "name": "mu_bkg2",
+                        "bounds": [
+                            [
+                                0.0,
+                                5.0
+                            ]
+                        ],
+                        "inits": [
+                            1.0
+                        ],
+                        "fixed": false
+                    },
+                    {
+                        "name": "mu_bkg1",
+                        "bounds": [
+                            [
+                                0.0,
+                                5.0
+                            ]
+                        ],
+                        "inits": [
+                            1.0
+                        ],
+                        "fixed": false
+                    }
+                ],
+                "poi": "lumi"
+            }
+        }
+    ],
+    "observations": [
+        {
+            "name": "CR1",
+            "data": [
+                580.0
+            ]
+        },
+        {
+            "name": "CR2",
+            "data": [
+                4200.0
+            ]
+        },
+        {
+            "name": "SR",
+            "data": [
+                24.0
+            ]
+        }
+    ],
+    "version": "1.0.0"
+}
