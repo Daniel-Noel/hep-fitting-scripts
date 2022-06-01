@@ -7,13 +7,14 @@ extrapolating them to VRs and SRs
 
 author : Daniel Noel
 """
-import cabinetry
-import numpy as np
 import json
-import pyhf
-from tabulate import tabulate
 import os
 import pickle
+
+import cabinetry
+import numpy as np
+import pyhf
+from tabulate import tabulate
 
 
 def main():
@@ -46,6 +47,7 @@ def main():
     yt = yield_table(ws, fit_results_main)
     yt.write_yield_table(4)
     yt.save_histfitter_table()
+
 
 def get_channels_to_prune(spec, sample):
     """pyhf.Workspace.prune() won't work to leave an totally empty channel
@@ -548,7 +550,7 @@ class yield_table:
                 yield table_dict
                 table_dict = {}
 
-        #flush the final table dict out
+        # flush the final table dict out
         if len(table_dict) != 0:
             yield table_dict
 
@@ -590,35 +592,40 @@ class yield_table:
         os.makedirs("output", exist_ok=True)
         os.rename(file_name, "output/{0}".format(file_name))
 
-
     def save_histfitter_table(self):
         """get a pickle in the histfitter format for use with
         PullPlot.py scripts"""
-        histfitter_table = {'names': self.channels,
-                   'nobs':list(self.observed_data.values()),
-                   'TOTAL_MC_EXP_BKG_events' : list(self.prefit_yields.values()),
-                    'TOTAL_MC_EXP_BKG_err' : list(self.prefit_stdev.values()),
-                    'TOTAL_FITTED_bkg_events' : list(self.postfit_yields.values()),
-                    'TOTAL_FITTED_bkg_events_err' : list(self.prefit_stdev.values())}
+        histfitter_table = {
+            "names": self.channels,
+            "nobs": list(self.observed_data.values()),
+            "TOTAL_MC_EXP_BKG_events": list(self.prefit_yields.values()),
+            "TOTAL_MC_EXP_BKG_err": list(self.prefit_stdev.values()),
+            "TOTAL_FITTED_bkg_events": list(self.postfit_yields.values()),
+            "TOTAL_FITTED_bkg_events_err": list(self.prefit_stdev.values()),
+        }
 
-        #sample specific
-        for name, yield_dict  in {"Fitted_events": self.postfit_sample_yields,
-                            "Fitted_err": self.postfit_sample_stdev,
-                             "MC_exp_events": self.prefit_sample_yields,
-                             "MC_exp_err": self.prefit_sample_stdev,
-                            }.items():
+        # sample specific
+        for name, yield_dict in {
+            "Fitted_events": self.postfit_sample_yields,
+            "Fitted_err": self.postfit_sample_stdev,
+            "MC_exp_events": self.prefit_sample_yields,
+            "MC_exp_err": self.prefit_sample_stdev,
+        }.items():
             for bkg in yield_dict:
                 postfit_yields = []
                 for ch in self.channels:
                     if ch in yield_dict[bkg]:
                         postfit_yields.append(yield_dict[bkg][ch])
                     else:
-                        postfit_yields.append(0.)
-                histfitter_table["{}_{}".format(name,bkg)] = postfit_yields
+                        postfit_yields.append(0.0)
+                histfitter_table["{}_{}".format(name, bkg)] = postfit_yields
 
         os.makedirs("output", exist_ok=True)
-        with open('output/yield_table_pyhf.pickle', 'wb') as handle:
-            pickle.dump(histfitter_table, handle, protocol=2) # if we want to use python2 for the HF use this protocol...
+        with open("output/yield_table_pyhf.pickle", "wb") as handle:
+            pickle.dump(
+                histfitter_table, handle, protocol=2
+            )  # if we want to use python2 for the HF use this protocol...
+
 
 if __name__ == "__main__":
     main()
