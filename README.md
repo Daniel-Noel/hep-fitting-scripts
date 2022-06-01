@@ -18,3 +18,9 @@ For producing post-fit plots where we fit in a control region and apply fit to v
 ```
 python postfit_plots.py
 ```
+
+
+For producing a systematic table for all systematics, individual systs or combined systs
+```
+python syst_table.py
+```
