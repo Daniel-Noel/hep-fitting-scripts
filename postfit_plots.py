@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
 """
 produce post fit plots using a pyhf fit in cabinetry
 
@@ -113,7 +112,7 @@ def plot_datamc(model_postfit, data, region, var_name, plot_info):
 
         """
     #plot the postfit result
-    cabinetry.visualize.data_mc(model_postfit, data,log_scale=True)
+    cabinetry.visualize.data_mc(model_postfit, data,log_scale=True) # note this produces outputs in figures/
     print("plotting, ", plot_info[var_name])
     
     fig = plt.gcf()
@@ -136,7 +135,7 @@ def plot_datamc(model_postfit, data, region, var_name, plot_info):
     
     for txt in fig.texts: txt.set_visible(False) # remove text on there currently
     
-    out_dir = os.path.join('plots',region)
+    out_dir = os.path.join('output','plots',region)
     os.makedirs(out_dir, exist_ok=True)
     plt.savefig(os.path.join(out_dir,"{}_postfit.png".format(var_name)), transparent=False)
     plt.savefig(os.path.join(out_dir,"{}_postfit.pdf".format(var_name)), transparent=False)

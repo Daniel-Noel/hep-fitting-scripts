@@ -3,6 +3,9 @@
 """
 Writing yield tables in Cabinetry, using a fit in CRs and
 extrapolating them to VRs and SRs
+
+
+author : Daniel Noel
 """
 import cabinetry
 import numpy as np
@@ -11,9 +14,6 @@ import pyhf
 from tabulate import tabulate
 import os
 import pickle
-
-# assert pyhf.__version__ == "0.6.4.dev60"  # using poi=None which is a new feature
-# assert cabinetry.__version__ == "0.4.0"
 
 
 def main():
@@ -43,11 +43,9 @@ def main():
     # and manually edit the tex (todo edit them in here e.g. add the hlines)
 
     ws = pyhf.Workspace(spec)
-    print(ws.channels)
     yt = yield_table(ws, fit_results_main)
     yt.write_yield_table(4)
     yt.save_histfitter_table()
-    print(vars(yt))
 
 def get_channels_to_prune(spec, sample):
     """pyhf.Workspace.prune() won't work to leave an totally empty channel
@@ -589,8 +587,8 @@ class yield_table:
 
         f.close()
 
-        os.makedirs("YieldTables", exist_ok=True)
-        os.rename(file_name, "YieldTables/{0}".format(file_name))
+        os.makedirs("output", exist_ok=True)
+        os.rename(file_name, "output/{0}".format(file_name))
 
 
     def save_histfitter_table(self):
@@ -618,8 +616,8 @@ class yield_table:
                         postfit_yields.append(0.)
                 histfitter_table["{}_{}".format(name,bkg)] = postfit_yields
 
-        os.makedirs("YieldTables", exist_ok=True)
-        with open('YieldTables/yield_table_pyhf.pickle', 'wb') as handle:
+        os.makedirs("output", exist_ok=True)
+        with open('output/yield_table_pyhf.pickle', 'wb') as handle:
             pickle.dump(histfitter_table, handle, protocol=2) # if we want to use python2 for the HF use this protocol...
 
 if __name__ == "__main__":
