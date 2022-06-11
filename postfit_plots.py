@@ -23,16 +23,16 @@ import pyhf
 # these are how the spec has been defined
 plot_info = {
     "pt1": {
-        "PlotNBins": 30,
-        "PlotBinLow": 0.0,
-        "PlotBinHigh": 200.0,
-        "titleX": r"Leading $p_{T}$ [GeV]",
+        "n_bins": 30,
+        "low_edge": 0.0,
+        "high_edge": 200.0,
+        "x_label": r"Leading $p_{T}$ [GeV]",
     },
     "pt2": {
-        "PlotNBins": 10,
-        "PlotBinLow": 0.0,
-        "PlotBinHigh": 200.0,
-        "titleX": r"Subleading $p_{T}$ [GeV]",
+        "n_bins": 10,
+        "low_edge": 0.0,
+        "high_edge": 200.0,
+        "x_label": r"Subleading $p_{T}$ [GeV]",
     },
 }
 
@@ -126,7 +126,6 @@ def plot_datamc(model_postfit, data, region, var_name, plot_info):
     cabinetry.visualize.data_mc(
         model_postfit, data, log_scale=True
     )  # note this produces outputs in figures/
-    print("plotting, ", plot_info[var_name])
 
     fig = plt.gcf()
     ax1, ax2 = fig.axes
@@ -134,13 +133,13 @@ def plot_datamc(model_postfit, data, region, var_name, plot_info):
     ax2.set_ylabel("data / SM")
     ax1.set_ylabel("Events")
     ax1.yaxis.set_label_coords(-0.12, 0.95)  # move "Events"
-    plt.xlabel(plot_info[var_name]["titleX"])
+    plt.xlabel(plot_info[var_name]["x_label"])
 
     # change ticklabels to our data
     # note the data has bins from 0->nbins
-    nticks = 6
+    nticks = 6  # note - can use plot_info[var_name]['n_bins'] if it's not too congested
     ticklabels = np.linspace(
-        plot_info[var_name]["PlotBinLow"], plot_info[var_name]["PlotBinHigh"], nticks
+        plot_info[var_name]["low_edge"], plot_info[var_name]["high_edge"], nticks
     )
     ticklabels = [float("{:.2f}".format(i)) for i in ticklabels]
     tick_locs = np.linspace(min(ax2.get_xticks()), max(ax2.get_xticks()), nticks)
@@ -184,14 +183,11 @@ def plot_variable(ws, fit_results_main, variable, all_variables, region, plot_in
             Dictionary of plotting information
 
         """
-    print(vars(ws))
     # remove variables we are not plotting
     variables_to_prune = all_variables[:]
     variables_to_prune.remove(variable)
     ws_pruned = pyhf.Workspace.prune(ws, channels=variables_to_prune)
     model, data = cabinetry.model_utils.model_and_data(ws_pruned)
-
-    print(variable, variables_to_prune)
 
     # get postfit model
     model_postfit = match_model(model, fit_results_main)
